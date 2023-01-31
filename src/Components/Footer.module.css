@@ -1,0 +1,22 @@
+.back {
+    background-color: rgb(59, 59, 59);
+    height: 200px;
+    padding: 30px 10%;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    font-size: 15px;
+}
+
+ul {
+    list-style:none;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-top: 10px;
+}
+
+a{
+    color: white;
+}

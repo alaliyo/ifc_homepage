@@ -1,0 +1,63 @@
+.calender_box {
+    background-color: rgb(255, 245, 233);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header h2 {
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.header h5 {
+    margin-top: 30px;
+}
+
+.header div {
+    display: flex;
+}
+
+.header div button{
+    margin: auto 10px auto 0px;
+    background-color: white;
+    color: rgb(120, 120, 120);
+    height: 30px;
+    width: 30px;
+    border: solid 2px rgb(180, 180, 180);
+    border-radius: 50%;
+    font-weight: 900;
+}
+
+.header div button:active {
+    background-color: rgb(180, 180, 180);
+    color: white;
+  }
+  
+.days {
+    width: 98%;
+    list-style: none;
+    margin: 0 1%;
+    padding: 0;
+    font-weight: 900;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+
+.days li {
+    color: rgb(65, 65, 65);
+    width: 13%;
+    text-align: center;
+    background-color: white;
+}
+
+.days li:nth-child(1) {
+    color: rgb(255, 62, 62);
+}
+
+.days li:nth-child(7) {
+    color: rgb(59, 59, 255);
+}

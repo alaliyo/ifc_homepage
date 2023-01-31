@@ -1,0 +1,59 @@
+.header {
+    padding: 0 12%;
+    height: 80px;
+    border-bottom: 3px solid rgb(206, 206, 206);
+}
+
+a {
+    text-decoration: none;
+}
+
+.header_box {
+    background-color: white;
+    height: 100%;
+    display : flex;
+}
+
+.ifc_logo {
+    color: black;
+    height: 100%;
+    font-weight: 900;
+}
+
+.ifc_logo p:nth-child(1) {
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.ifc_logo p:nth-child(2) {
+    font-size: 27px;
+    margin-top: 0;
+}
+
+.ifc_logo:hover {
+    color: rgb(119, 119, 119);
+    transition-duration: 0.7s;
+}
+
+.menu_btn {
+    margin-left: 5%;
+    height: 100%;
+    display : flex;
+}
+
+.menu_btn a {
+    color: black;
+    height: 100%;
+    width: 100px;
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 900;
+    display : flex;
+    align-items: center;
+    align-content: center;
+}
+
+.menu_btn a:hover {
+    color: rgb(119, 119, 119);
+    transition-duration: 0.7s;
+} 
