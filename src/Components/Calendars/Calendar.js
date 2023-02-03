@@ -6,6 +6,11 @@ function Calendar() {
     const [year, setYear] = useState(today.getFullYear());
     const [month, setMonth] = useState(today.getMonth() + 1);
 
+    const divArr = [];
+    for (let i = 0; i <= 41; i++) {
+        divArr.push(i);
+    }
+    
     const prevMonth = () => {
         setMonth(e => e - 1);
     }
@@ -23,6 +28,9 @@ function Calendar() {
         setYear(e => e + 1);
         setMonth(e => e - 12);
     }
+
+    const date = new Date(year, month, 0).getDate();
+    const day = new Date(year, month - 1, 1).getDay();
 
     useEffect (() => {
         prevMonth();
@@ -51,6 +59,12 @@ function Calendar() {
                 <li key='5'>Fri</li>
                 <li key='6'>Sat</li>
             </ul>
+            <div className={styles.date_dox}>
+                {divArr.map(e => <div key={e}>
+                    {e >= day && e <= date + day - 1? date + ((e + 1) - (date + day)): null}
+                </div>)}
+            </div>
+            
         </div>
     )
 }

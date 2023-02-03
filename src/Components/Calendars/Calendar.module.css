@@ -1,5 +1,6 @@
 .calender_box {
-    background-color: rgb(255, 245, 233);
+    background-color: rgb(255, 224, 181);
+    font-weight: 900;
 }
 
 .header {
@@ -28,7 +29,6 @@
     width: 30px;
     border: solid 2px rgb(180, 180, 180);
     border-radius: 50%;
-    font-weight: 900;
 }
 
 .header div button:active {
@@ -37,19 +37,17 @@
   }
   
 .days {
+    display: grid;
+    grid-template-columns: repeat(7, 13.4%);
     width: 98%;
+    gap: 10px;
     list-style: none;
     margin: 0 1%;
     padding: 0;
-    font-weight: 900;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-around;
 }
 
 .days li {
     color: rgb(65, 65, 65);
-    width: 13%;
     text-align: center;
     background-color: white;
 }
@@ -59,5 +57,28 @@
 }
 
 .days li:nth-child(7) {
+    color: rgb(59, 59, 255);
+}
+
+.date_dox {
+    display: grid;
+    grid-template-columns: repeat(7, 13.4%);
+    grid-template-rows: repeat(6, 100px);
+    gap: 10px;
+    margin: 1%;
+    padding-bottom: 15px;
+}
+
+.date_dox div {
+    color: rgb(65, 65, 65);
+    background-color: white;
+    padding: 5px;
+}
+
+.date_dox div:nth-child(7n + 1) {
+    color: rgb(255, 62, 62);
+}
+
+.date_dox div:nth-child(7n + 7) {
     color: rgb(59, 59, 255);
 }
