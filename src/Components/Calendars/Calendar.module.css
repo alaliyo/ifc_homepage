@@ -8,12 +8,12 @@
     justify-content: space-between;
 }
 
-.header h2 {
+.header h1 {
     margin-right: 10px;
     margin-left: 20px;
 }
 
-.header h5 {
+.header h4 {
     margin-top: 30px;
 }
 
@@ -21,7 +21,7 @@
     display: flex;
 }
 
-.header div button{
+.header div button {
     margin: auto 10px auto 0px;
     background-color: white;
     color: rgb(120, 120, 120);
@@ -38,7 +38,7 @@
   
 .days {
     display: grid;
-    grid-template-columns: repeat(7, 13.4%);
+    grid-template-columns: repeat(7, 1fr);
     width: 98%;
     gap: 10px;
     list-style: none;
@@ -62,7 +62,7 @@
 
 .date_dox {
     display: grid;
-    grid-template-columns: repeat(7, 13.4%);
+    grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(6, 100px);
     gap: 10px;
     margin: 1%;
